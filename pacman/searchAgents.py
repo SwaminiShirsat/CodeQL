@@ -47,7 +47,7 @@ class SearchAgent(Agent):
         # Warning: some advanced Python magic is employed below to find the right functions and problems
 
         # Get the search function from the name and heuristic
-        if fn not in dir(search):
+        if fn not in dir(search)
             raise AttributeError(fn + ' is not a search function in search.py.')
         func = getattr(search, fn)
         if 'heuristic' not in func.__code__.co_varnames:
